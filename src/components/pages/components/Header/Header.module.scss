@@ -1,0 +1,252 @@
+.header {
+  justify-content: space-between;
+  max-height: 93px;
+  display: flex;
+  padding: 15px 60px 15px 63px;
+  align-items: center;
+}
+
+.ul {
+  margin-left: 30.25%;
+  display: flex;
+  align-items: center;
+  column-gap: 49px;
+}
+
+li {
+  a {
+    cursor: pointer;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+  }
+  list-style: none;
+}
+
+.logo {
+  cursor: pointer;
+  flex: 0 0 141px;
+  width: 141px;
+  height: 93px;
+  img {
+    transform: translateY(5px);
+    width: 100%;
+  }
+}
+
+.limitCompany {
+  margin-right: 9.7%;
+  margin-left: 9.7%;
+  position: relative;
+  p {
+    justify-self: flex-start;
+    color: #000;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    opacity: 0.4;
+  }
+  border-radius: 5px;
+  background-color: rgba(217, 217, 217, 0.3);
+  border-radius: 5px;
+  padding: 14px 10px;
+  column-gap: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.limitCompanyTextItem {
+  p {
+    &:first-child {
+      margin-bottom: 7px;
+    }
+  }
+  color: red;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14px;
+
+  column-gap: 7px;
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.userCompanyCountText {
+  color: black;
+}
+
+.companyLimit {
+  color: #8ac540;
+}
+
+.limitCompanyCountItem {
+  @extend .limitCompanyTextItem;
+  align-items: flex-start;
+  justify-content: baseline;
+  div {
+    &:first-child {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.userName {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+
+.quit {
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #029491;
+    color: white;
+    opacity: 1;
+  }
+  cursor: pointer;
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  opacity: 0.4;
+  background-color: transparent;
+  border: 0px;
+}
+
+.userNameAndQuit {
+  margin-right: 1.8px;
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.user {
+  display: flex;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.logInOrSignUpContainer {
+  display: flex;
+}
+
+.SignUpBtnHeader {
+  cursor: pointer;
+  margin-right: 18px;
+  border: 0px;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  &:hover {
+    color: #029491;
+  }
+}
+
+.loginBtnHeaderContainer {
+  &::after {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #029491;
+    opacity: 0.6;
+    transform: translateY(-100%);
+  }
+}
+
+.loginBtnHeader {
+  &:hover {
+    background: #55bdbb;
+  }
+  transition: all 0.5s ease;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 5px 12px;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  border-radius: 5px;
+  background: #7ce3e1;
+  border: 0px;
+}
+
+@media (max-width: 1439px) {
+  .ul {
+    margin-left: 15%;
+  }
+  .limitCompany {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .ul {
+    margin-left: 5%;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .ul {
+    margin-left: 3%;
+    column-gap: 15px;
+  }
+
+  .limitCompany {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 769px) {
+  .ul {
+    display: none;
+  }
+  .header {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .user {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .limitCompany {
+    display: none;
+  }
+}
